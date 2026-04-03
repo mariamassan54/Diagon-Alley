@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grad4.css">
+    <title>Flourish & Blotts</title>
+</head>
+<body>
+    <a href="trunk.html" style="text-decoration: none;">
+        <div class="cart-status" style="position: fixed; top: 20px; right: 20px; background: rgba(0,0,0,0.8); padding: 10px 20px; border: 2px solid cyan; border-radius: 50px; z-index: 1001; color: cyan; font-family: 'Harry P'; font-size: 25px; box-shadow: 0 0 15px cyan; cursor: pointer;">
+            🛒 Trunk: <span id="cart-count">0</span> Items
+        </div>
+    </a>
+
+    <div id="cursor-follower" style="position: fixed; width: 15px; height: 15px; border: 2px solid cyan; border-radius: 50%; pointer-events: none; z-index: 9999; box-shadow: 0 0 15px cyan; transition: transform 0.1s ease-out; background: rgba(0, 255, 255, 0.2);"></div>
+
+    <div class="main">
+        <div class="Header"></div>
+        <br><br><br>
+        <center>
+            <h1>Flourish & Blotts</h1>
+            <br><br>
+            <div class="past">
+                <img src="Flourish & Blotts.jpg" alt="Flourish and Blotts" width="200" height="200">
+                <h1>Flourish and Blotts past</h1>
+                <h3>The Magical Bookstore of Diagon Alley 📚</h3>
+                <p>
+                "If you’ve ever walked through Diagon Alley, you’ve probably seen the bustling shop filled to the ceiling with flying books and eager students — that’s Flourish and Blotts, the heart of magical literature in Britain."
+                </p><hr>
+
+                <h3>A Storied Past Since 1654 📖</h3>
+                <p>
+                "Founded in 1654, Flourish and Blotts has served generations of witches and wizards — from the era of broomstick knights to the digital-age wandmakers."
+                </p><hr>
+
+                <h3>Not Just School Books... Rare Tomes & Cursed Texts Too! ☠️</h3>
+                <p>
+                "It’s not just textbooks for Hogwarts — they sell everything from spell theory to dangerous dark magic books."
+                </p><hr>
+
+                <h3>Famous Events and Authors 🖋️</h3>
+                <p>
+                "Remember Gilderoy Lockhart’s chaotic signing event? Or that time a cursed book bit someone’s hand off?"
+                </p><hr>
+
+                <h3>The Beating Heart of Wizarding Knowledge 🧠</h3>
+                <p>
+                "Flourish and Blotts isn’t just where you buy books — it’s where generations of magical thinking begins."
+                </p>
+            </div>
+
+            <br><br><br>
+            <p class="wands">Where Magic Begins… One Page at a Time</p>
+            
+            <div class="container">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="potions.jpg" alt="Magical Recipes" width="200px" height="200px" />
+                            <h3>Magical Recipes</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>Classic potion and spell recipes passed down through generations.</p>
+                            <a href="potions.pdf" target="_blank" class="pdf-link">📘 Read Preview</a>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Magical Recipes Book', 15)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="spells.jpg" alt="Spells Book" width="200px" height="200px" />
+                            <h3>Mastering Charms</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>Complete guide to casting effective charms, hexes, and counter-curses.</p>
+                            <a href="تعاويذ للمبتدئين.pdf" target="_blank" class="pdf-link">📘 Read Preview</a>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Mastering Charms', 20)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="حيوانات سحريه.jpg" alt="Fantastic Beasts" width="200px" height="200px" />
+                            <h3>Fantastic Beasts</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>Encyclopedia of magical creatures from all corners of the world.</p>
+                            <a href="حيوانات سحريه.pdf" target="_blank" class="pdf-link">📘 Read Preview</a>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Fantastic Beasts Book', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="فلك.jpg" alt="Magical Astronomy" width="200px" height="200px" />
+                            <h3>Magical Astronomy</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>How stars and planets affect magical energy and spell effectiveness.</p>
+                            <a href="فلك.pdf" target="_blank" class="pdf-link">📘 Read Preview</a>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Magical Astronomy', 12)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="تاريخ.jpg" alt="History of Magic" width="200px" height="200px" />
+                            <h3>History of Magic</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>The standard Hogwarts textbook chronicling magical development.</p>
+                            <a href="كتاب تاريخ السحر.pdf" target="_blank" class="pdf-link">📘 Read Preview</a>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('History of Magic', 18)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn">
+                <a href="grad3.html" class="nav"> <--back--> </a>
+                <a href="trunk.html" class="nav">View Trunk 🛒</a>
+            </div>
+        </center>
+    </div>
+
+    <script>
+        // نظام التخزين
+        let cart = JSON.parse(localStorage.getItem('wizardCart')) || [];
+        updateCartCount();
+
+        function addToCart(itemName, price) {
+            cart.push({ name: itemName, price: price });
+            localStorage.setItem('wizardCart', JSON.stringify(cart));
+            updateCartCount();
+            alert("✨ " + itemName + " has been added to your trunk!");
+        }
+
+        function updateCartCount() {
+            document.getElementById('cart-count').innerText = cart.length;
+        }
+
+        // تأثير الماوس
+        const cursor = document.getElementById('cursor-follower');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX - 7 + 'px';
+            cursor.style.top = e.clientY - 7 + 'px';
+        });
+    </script>
+</body>
+</html>

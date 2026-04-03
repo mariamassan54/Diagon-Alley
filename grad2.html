@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagon Alley</title>
+    <link rel="stylesheet" href="grad2.css">
+</head>
+<body>
+    <div class="main container">
+<section class="Header"></section>
+<br>
+<section class="paragraph">
+    <center>
+    <P> Welcome to Diagon Alley Market – the first magical marketplace in the digital realm!
+Here, magic meets shopping. Browse rare wands, mysterious potions, enchanted books, and even adopt your own owl for delivery.
+We don’t just sell products — we sell spells, secrets, and stories.
+Get ready for a magical journey through Diagon Alley, from the comfort of your screen!</P>
+</center>
+<hr>
+</section>
+<section class="form" id="magicForm">
+    <h1>Enter your account</h1>
+     <form>
+                <label>User Name :</label>
+                <input type="text" placeholder="Enter your name" required class="input">
+                <br><br><br>
+
+                <label>Email :</label>
+                <input type="email" placeholder="Enter your email" required class="input"> 
+                <br><br><br>
+
+                <label>User address:</label>
+                <input type="text" placeholder="Enter your address" required class="input">
+                <br><br><br>
+
+                <label>Birth Day :</label>
+                <input type="date" required class="input">
+                <br><br><br>
+
+                <label>Age:</label>
+                <input type="number"  placeholder="Enter your age" class="input">
+                <br><br><br>
+
+                <label>Color :</label>
+                <input type="color" id="userColor" class="input">
+                <br><br><br>
+
+                <label>Password :</label>
+                <input type="password" placeholder="Enter password" required class="input">
+                <br><br><br>
+
+                <label>Photo :</label>
+                <input type="file" class="input">
+                <br><br><br>
+
+                <label>Gender:</label><br>
+                <input type="radio" name="gender" value="Male" required class="input"> Male
+                <input type="radio" name="gender" value="Female" required class="input"> Female
+                <br><br><br>
+                <input type="submit"class="input2">
+                <input type="reset" class="input2">
+            </form>
+</section>
+<br>
+<center>
+<section class="nav">
+    <a href="grad3.html" target="_blank" class="nav2">shop now </a>
+    
+</section>
+<br>
+</center>
+    </div>
+    <script>
+    // 1. نمسك العناصر اللي هنحتاجها
+    const colorPicker = document.getElementById('userColor');
+    const magicForm = document.getElementById('magicForm');
+
+    // 2. نعمل وظيفة (Function) بتشتغل أول ما اللون يتغير
+    colorPicker.addEventListener('input', function() {
+        let pickedColor = colorPicker.value; // ناخد القيمة اللي اليوزر اختارها
+        
+        // 3. نغير لون الـ Border والـ Glow (Shadow) بتاع الفورم فوراً
+        magicForm.style.borderColor = pickedColor;
+        magicForm.style.boxShadow = "0 0 30px " + pickedColor;
+        
+        // اختياري: نغير لون العناوين كمان عشان التناسق
+        document.querySelector('h1').style.color = pickedColor;
+    });
+</script>
+</body>
+</html>

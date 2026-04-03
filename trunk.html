@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grad4.css">
+    <title>Your Magical Trunk</title>
+</head>
+<body>
+    <div class="main">
+        <center>
+            <br><br>
+            <h1 style="font-size: 60px;">Your Magical Trunk 🧳</h1>
+            <p>Everything you gathered from Diagon Alley is stored here.</p>
+
+            <table class="trunk-table" id="trunk-items">
+                <thead>
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Price (Galleons)</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-body">
+                    </tbody>
+            </table>
+
+            <div class="total-section">
+                Total: <span id="total-price">0</span> Galleons 💰
+            </div>
+
+            <br><br>
+            <div class="btn">
+                <a href="grad3.html" class="nav">Back to Diagon Alley</a>
+                <button class="clear-btn" onclick="clearTrunk()">Empty Trunk 🗑️</button>
+                <button class="nav" onclick="confirmPurchase()" style="background: none; border: 2px solid cyan; cursor: pointer;">Confirm Purchase ✅</button>
+            </div>
+        </center>
+    </div>
+
+    <script>
+        function displayTrunk() {
+            let cart = JSON.parse(localStorage.getItem('wizardCart')) || [];
+            let tableBody = document.getElementById('cart-body');
+            let totalDisplay = document.getElementById('total-price');
+            let total = 0;
+
+            tableBody.innerHTML = ""; 
+
+            cart.forEach((item) => {
+                let row = `<tr>
+                    <td>${item.name}</td>
+                    <td>${item.price} g</td>
+                </tr>`;
+                tableBody.innerHTML += row;
+                total += item.price;
+            });
+
+            totalDisplay.innerText = total;
+        }
+
+        function clearTrunk() {
+            if(confirm("Are you sure you want to empty your trunk?")) {
+                localStorage.removeItem('wizardCart');
+                displayTrunk();
+            }
+        }
+
+        // الدالة الجديدة للانتقال إلى grad13
+        function confirmPurchase() {
+            let cart = JSON.parse(localStorage.getItem('wizardCart')) || [];
+            if (cart.length === 0) {
+                alert("Your trunk is empty! Go buy some magic items first.");
+            } else {
+                alert('Order sent to Gringotts Bank! Your journey to Hogwarts begins now...');
+                // يمكنك مسح الشنطة هنا إذا أردتِ أن تبدأ من جديد بعد الشراء
+                // localStorage.removeItem('wizardCart'); 
+                window.location.href = "grad13.html";
+            }
+        }
+
+        displayTrunk();
+    </script>
+</body>
+</html>

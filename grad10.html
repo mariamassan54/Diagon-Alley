@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grad4.css">
+    <title>Slug & Jiggers Apothecary</title>
+</head>
+<body>
+
+    <a href="trunk.html" style="text-decoration: none;">
+        <div class="cart-status" style="position: fixed; top: 20px; right: 20px; background: rgba(0,0,0,0.8); padding: 10px 20px; border: 2px solid cyan; border-radius: 50px; z-index: 1001; color: cyan; font-family: 'Harry P'; font-size: 25px; box-shadow: 0 0 15px cyan; cursor: pointer;">
+            🛒 Trunk: <span id="cart-count">0</span> Items
+        </div>
+    </a>
+
+    <div id="cursor-follower" style="position: fixed; width: 15px; height: 15px; border: 2px solid cyan; border-radius: 50%; pointer-events: none; z-index: 9999; box-shadow: 0 0 15px cyan; transition: transform 0.1s ease-out; background: rgba(0, 255, 255, 0.2);"></div>
+
+    <div class="main">
+        <div class="Header"></div>
+        <br><br><br>
+        <center>
+            <div class="past">
+                <img src="Slug & Jiggers Apothecary.jpg" alt="Slug & Jiggers Apothecary" width="200" height="200">
+                <h1>Slug & Jiggers Apothecary - Past</h1>
+                <h3>Where Potions Begin and Magic is Bottled 🧪</h3>
+                <p>
+                    "In the heart of Diagon Alley, Slug & Jiggers Apothecary has served witches and wizards for centuries, offering ingredients essential to the art of potion-making."
+                    A cornerstone of magical health and alchemy since the early 13th century.
+                </p><hr>
+
+                <h3>Established in 1207 - A Legacy of Elixirs ⚗️</h3>
+                <p>
+                    "Founded during the age of early magical medicine, the apothecary quickly gained a reputation for quality, purity, and innovation in magical brews."
+                    It became a trusted name across the wizarding world.
+                </p><hr>
+
+                <h3>Essential Stop for Hogwarts Students 📚</h3>
+                <p>
+                    "Every year, students stock up on potion kits and rare ingredients here, guided by lists from Professor Snape and others."
+                    A rite of passage before each school year begins.
+                </p><hr>
+
+                <h3>Behind the Counter: Expert Potion Masters 🧙‍♂️</h3>
+                <p>
+                    "Run by generations of skilled apothecaries, the shop prides itself on personal advice and ancient potion lore."
+                    Their knowledge is as valuable as their products.
+                </p><hr>
+
+                <h3>Timeless and Trusted 💚</h3>
+                <p>
+                    "Despite centuries of change, Slug & Jiggers continues to brew tradition and trust — one vial at a time."
+                    A symbol of magical heritage and healing.
+                </p>
+            </div>
+            <br><br><br>
+            <h1 class="wands">From healing herbs to rare elixirs !</h1>
+            
+            <div class="store container">
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src=" Pepperup Potion.jpg" alt="Product" width="100%" height="100%"/>
+                        </div>
+                        <div class="card-back">
+                            <h3>Pepperup Potion </h3>
+                            <h3>Price: g25</h3>
+                            <label>Quantity:</label>
+                            <input type="number" value="1" min="1" style="width: 50px;"/>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Pepperup Potion', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Sleekeazy’s Hair Potion.jpg" alt="Product" width="100%" height="100%"/>
+                        </div>
+                        <div class="card-back">
+                            <h3>Sleekeazy’s Hair Potion</h3>
+                            <h3>Price: g25</h3>
+                            <label>Quantity:</label>
+                            <input type="number" value="1" min="1" style="width: 50px;"/>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Hair Potion', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Love Potions.jpg" alt="Product" width="100%" height="100%"/>
+                        </div>
+                        <div class="card-back">
+                            <h3>Love Potion</h3>
+                            <h3>Price: g25</h3>
+                            <label>Quantity:</label>
+                            <input type="number" value="1" min="1" style="width: 50px;"/>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Love Potion', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src=" Polyjuice Potion .jpg" alt="Product" width="100%" height="100%"/>
+                        </div>
+                        <div class="card-back">
+                            <h3> Polyjuice Potion </h3>
+                            <h3>Price: g25</h3>
+                            <label>Quantity:</label>
+                            <input type="number" value="1" min="1" style="width: 50px;"/>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Polyjuice Potion', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Potion Kits.jpg" alt="Product" width="100%" height="100%"/>
+                        </div>
+                        <div class="card-back">
+                            <h3> Potion Kits </h3>
+                            <h3>Price: g25</h3>
+                            <label>Quantity:</label>
+                            <input type="number" value="1" min="1" style="width: 50px;"/>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Potion Kit', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="btn">
+                <a href="grad3.html" class="nav"> <--back--></a>
+                <a href="trunk.html" class="nav">View Trunk 🛒</a>
+            </div>
+        </center>
+    </div>
+
+    <script>
+        // نظام التخزين
+        let cart = JSON.parse(localStorage.getItem('wizardCart')) || [];
+        updateCartCount();
+
+        function addToCart(itemName, price) {
+            cart.push({ name: itemName, price: price });
+            localStorage.setItem('wizardCart', JSON.stringify(cart));
+            updateCartCount();
+            alert("✨ " + itemName + " has been added to your trunk!");
+        }
+
+        function updateCartCount() {
+            if(document.getElementById('cart-count')) {
+                document.getElementById('cart-count').innerText = cart.length;
+            }
+        }
+
+        // تأثير الماوس
+        const cursor = document.getElementById('cursor-follower');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX - 7 + 'px';
+            cursor.style.top = e.clientY - 7 + 'px';
+        });
+    </script>
+</body>
+</html>

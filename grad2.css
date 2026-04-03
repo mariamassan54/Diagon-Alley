@@ -1,0 +1,101 @@
+body{
+    background-color: black;
+    color: antiquewhite;
+    background-image: url(b.jpg);
+}
+.Header{
+  background-image: url("logo2.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 90%;
+  margin: 30px auto;
+  color:wheat;
+  border-radius: 27px;
+  
+}
+.Header:hover{
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+    box-shadow: 2px 3px 8px 4px cyan;
+    transition: box-shadow 0.5s ease;
+}
+.paragraph{
+    font-size: 30px;
+   font-family: 'Harry P';
+}
+.paragraph:hover{
+    text-shadow: 2px 3px 8px  cyan;
+    transition: text-shadow 0.5s ease;
+}
+.form {
+  text-align: center;
+  padding: 30px;
+  border-radius: 15px;
+  width: 500px;
+  margin: auto;
+  border: 2px solid cyan;
+}
+.form:hover{
+    box-shadow: 0 0 20px cyan;
+    transition: box-shadow 0.9s ease;
+}
+.input{
+box-shadow: 2px 3px 10px 3px #b37eda;
+border-radius: 25px;
+}
+input:hover{
+     transform: scale(1.1);
+     transition: transform 0.2s ease;
+}
+.input2{
+  background-color: #b37eda;
+  color: black;
+}
+.input2:hover{
+  background-color: #2e1a47;
+}
+.nav {
+  background-color: #2e1a47;
+  color:ivory;
+  font-size: 18px;
+  padding: 15px 40px;
+  margin: 10px auto;
+  border: 2px solid #bb86fc;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(187, 134, 252, 0.5);
+  display: block;       
+  width: fit-content;     
+  text-align: center;
+
+}
+.nav2{
+    text-decoration: none;
+    color: bisque;
+}
+.nav:hover{
+    background-color: blueviolet;
+    transition: background-color 0.2s ease;
+}
+
+/* تغيير شكل الماوس الأساسي (اختياري لو عايزة سهم سحري) */
+body {
+    cursor: url('https://cur.cursors-4u.net/games/gam-13/gam1211.cur'), auto;
+}
+
+/* الدائرة اللي بتلحق الماوس */
+.cursor-follower {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: rgba(0, 255, 255, 0.3);
+    border: 1px solid cyan;
+    border-radius: 50%;
+    pointer-events: none; /* عشان ميعطلش الكليكات */
+    z-index: 9999;
+    transition: transform 0.1s ease-out;
+    box-shadow: 0 0 15px cyan;
+}

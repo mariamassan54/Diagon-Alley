@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ollivanders Store</title>
+    <link rel="stylesheet" href="grad4.css">
+</head>
+<body>
+
+    <a href="trunk.html" style="text-decoration: none;">
+        <div class="cart-status" style="position: fixed; top: 20px; right: 20px; background: rgba(0,0,0,0.8); padding: 10px 20px; border: 2px solid cyan; border-radius: 50px; z-index: 1001; color: cyan; font-family: 'Harry P'; font-size: 25px; box-shadow: 0 0 15px cyan; cursor: pointer;">
+            🛒 Trunk: <span id="cart-count">0</span> Items
+        </div>
+    </a>
+
+    <div id="cursor-follower" style="position: fixed; width: 15px; height: 15px; border: 2px solid cyan; border-radius: 50%; pointer-events: none; z-index: 9999; box-shadow: 0 0 15px cyan; transition: transform 0.1s ease-out; background: rgba(0, 255, 255, 0.2);"></div>
+
+    <div class="main">
+        <div class="Header"></div>
+        
+        <center>
+            <br><br><br>
+            <h1>Ollivanders Store Past</h1>
+            <br><br>
+            <div class="past">
+                <img src="Ollivanders.jpg" alt="Ollivanders" width="200" height="200">
+                <h1>Ollivanders</h1>
+                <h3> First Impressions of Ollivanders</h3>
+                <p>
+                    "Hogwarts journey, you’ll probably remember that shop — the one with the dusty windows, the faded golden letters, and a feeling like the walls themselves are watching you. That’s Ollivanders, the most legendary wand shop in all of Britain."
+                    This section sets the tone. Ollivanders isn’t just a store — it’s a magical experience. The moment you walk in, you feel the ancient, enchanted atmosphere.
+                </p><hr>
+                <h3> A History Older than Hogwarts 🏛️</h3>
+                <p>"Founded in 382 B.C., Ollivanders is older than the Ministry of Magic, older than Hogwarts itself! Can you believe that? The Ollivander family has been making wands for centuries..."
+                This part highlights the age and prestige of the Ollivander family and their wandmaking legacy — spanning over 2,400 years!</p>
+                <hr>
+                <h3> The Wandmaker Himself – Garrick Ollivander👁️‍🗨️</h3>
+                <p>"The current owner, Garrick Ollivander, is a bit mysterious, with silvery eyes and a habit of remembering every wand he’s ever sold..."
+                Here, we meet the legendary wandmaker. His memory and wisdom are unmatched — and let’s be honest, a little spooky.</p>
+                <hr>
+                <h3>What Makes Ollivanders Special🔮</h3>
+                <p>"What makes Ollivanders wands special? It’s not just the craftsmanship — it’s the cores: phoenix feather, unicorn hair, and dragon heartstring..."
+                This section explores the secret ingredients of Ollivander wands. It's all about balance, power, and destiny.</p><hr>
+                <h3>Ollivander and the Second Wizarding War ⚔️</h3>
+                <p>"During the Second Wizarding War, he was kidnapped by Death Eaters... he survived, and even helped Harry Potter understand the power behind wand loyalty..."
+                This part explains how vital Ollivander was in the fight against Voldemort — especially regarding wand loyalty and the Elder Wand.</p><hr>
+                <h3>A Magical Rite of Passage🧙 </h3>
+                <p>To us Hogwarts students, Ollivanders isn’t just a shop — it’s where our magical journey begins."
+                The conclusion. For every student, getting a wand from Ollivanders is more than shopping — it’s a rite of passage into the magical world.</p>
+            </div>
+            <br><br><br>
+            <p class="wands">The wand chooses the wizard</p>
+
+            <div class="container">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://i.pinimg.com/736x/39/83/ec/3983ec5f9f0f2f8b7fbf36d276b221b0.jpg" alt="Product" width="200px" height="200px"/>
+                            <h2>Magic Wand</h2>
+                            <h3>Harry Potter’s Wand</h3>
+                        </div>
+                        <div class="card-back">
+                            <h3>Price: $25</h3>
+                            <label>Quantity: <input type="number" value="1" min="1" style="width: 50px;"/></label>
+                            <br><br>
+                            <details>
+                                <summary>wand details</summary>
+                                <ul>
+                                    <li>Length: 11 inches</li>
+                                    <li>Wood: Holly</li>
+                                    <li>Core: Phoenix feather</li>
+                                    <li>Flexibility: Nice and supple</li>
+                                </ul>
+                            </details>
+                            <button class="buy-btn" onclick="addToCart('Harry Potter Wand', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://i.pinimg.com/1200x/d6/6e/f1/d66ef1c53313119292ec4c088a04044f.jpg" alt="Product" width="200px" height="200px"/>
+                            <h2>Magic Wand</h2>
+                            <h3> Hermione Granger’s Wand</h3>
+                        </div>
+                        <div class="card-back">
+                            <h3>Price: $25</h3>
+                            <label>Quantity: <input type="number" value="1" min="1" style="width: 50px;"/></label>
+                            <br><br>
+                            <details>
+                                <summary>wand details</summary>
+                                <ul>
+                                    <li>Length: 10¾ inches</li>
+                                    <li>Wood: Vine wood</li>
+                                    <li>Core: Dragon heartstring</li>
+                                    <li>Flexibility: Unknown (not officially stated)</li>
+                                </ul>
+                            </details>
+                            <button class="buy-btn" onclick="addToCart('Hermione Wand', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://i.pinimg.com/1200x/2e/73/ff/2e73ff6f6795143fc0a105197e1ca673.jpg" alt="Product" height="200px" width="200px"/>
+                            <h2>Magic Wand</h2>
+                            <h3>Luna Lovegood’s Wand</h3>
+                        </div>
+                        <div class="card-back">
+                            <h3>Price: $25</h3>
+                            <label>Quantity: <input type="number" value="1" min="1" style="width: 50px;"/></label>
+                            <br><br>
+                            <details>
+                                <summary>wand details</summary>
+                                <ul>
+                                    <li>Length: Unknown</li>
+                                    <li>Wood: Unknown</li>
+                                    <li>Core: Unknown</li>
+                                    <li>Acquired from: Likely from Ollivanders before starting Hogwarts</li>
+                                </ul>
+                            </details>
+                            <button class="buy-btn" onclick="addToCart('Luna Wand', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://i.pinimg.com/1200x/27/7d/ce/277dcea191c523d5ba0bfdf83b0fd4fb.jpg" alt="Product" height="200px" width="200px" />
+                            <h2>Magic Wand</h2>
+                            <h3> Sirius Black</h3>
+                        </div>
+                        <div class="card-back">
+                            <h3>Price: $25</h3>
+                            <label>Quantity: <input type="number" value="1" min="1" style="width: 50px;"/></label>
+                            <br><br>
+                            <details>
+                                <summary>wand details</summary>
+                                <ul>
+                                    <li>Length: Approx. 10¾ inches</li>
+                                    <li>Wood: Unknown</li>
+                                    <li>Core: Unknown</li>
+                                </ul>
+                            </details>
+                            <button class="buy-btn" onclick="addToCart('Sirius Wand', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://i.pinimg.com/736x/30/a0/a6/30a0a639d9c635c7d951bc8b5069b7b6.jpg" alt="Product" width="200px" height="200px"/>
+                            <h2>Magic Wand</h2>
+                            <h3>Mariam.H bmfory’s Wand</h3>
+                        </div>
+                        <div class="card-back">
+                            <h3>Price: $25</h3>
+                            <label>Quantity: <input type="number" value="1" min="1" style="width: 50px;"/></label>
+                            <br><br>
+                            <details>
+                                <summary>wand details</summary>
+                                <ul>
+                                    <li>Appears about 11 inches long</li>
+                                    <li>Tapers gradually to a fine, neat tip</li>
+                                    <li>No metallic parts — entirely wooden</li>
+                                    <li>May symbolize a wand for someone who's both a scholar and a fighter</li>
+                                </ul>
+                            </details>
+                            <button class="buy-btn" onclick="addToCart('Mariam Wand', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://i.pinimg.com/736x/15/41/e1/1541e129783f3fc1dfc05e1810f562e1.jpg" alt="Product" width="200px" height="200px"/>
+                            <h2>Magic Wand</h2>
+                            <h3>Voldemort’s Wand</h3>
+                        </div>
+                        <div class="card-back">
+                            <h3>Price: $25</h3>
+                            <label>Quantity: <input type="number" value="1" min="1" style="width: 50px;"/></label>
+                            <br><br>
+                            <details>
+                                <summary>wand details</summary>
+                                <ul>
+                                    <li>Wood: Yew</li>
+                                    <li>Length: 13½ inches</li>
+                                    <li>Shape: Slightly curved with a skeletal, claw-like design</li>
+                                    <li>Special Feature: Twin wand to Harry Potter’s – causes Priori Incantatem</li>
+                                </ul>
+                            </details>
+                            <button class="buy-btn" onclick="addToCart('Voldemort Wand', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn">
+                <a href="grad3.html" class="nav"> <--back--></a>
+                <a href="trunk.html" class="nav">View Trunk 🛒</a>
+            </div>
+        </center>
+    </div>
+
+    <script>
+        // نظام التخزين
+        let cart = JSON.parse(localStorage.getItem('wizardCart')) || [];
+        updateCartCount();
+
+        function addToCart(itemName, price) {
+            cart.push({ name: itemName, price: price });
+            localStorage.setItem('wizardCart', JSON.stringify(cart));
+            updateCartCount();
+            alert("✨ " + itemName + " has been added to your trunk!");
+        }
+
+        function updateCartCount() {
+            document.getElementById('cart-count').innerText = cart.length;
+        }
+
+        // تحريك الماوس
+        const cursor = document.getElementById('cursor-follower');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX - 7 + 'px';
+            cursor.style.top = e.clientY - 7 + 'px';
+        });
+    </script>
+</body>
+</html>

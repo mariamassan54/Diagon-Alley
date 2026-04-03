@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grad4.css">
+    <title>Weasleys' Wizard Wheezes</title>
+</head>
+<body>
+
+    <a href="trunk.html" style="text-decoration: none;">
+        <div class="cart-status" style="position: fixed; top: 20px; right: 20px; background: rgba(0,0,0,0.8); padding: 10px 20px; border: 2px solid cyan; border-radius: 50px; z-index: 1001; color: cyan; font-family: 'Harry P'; font-size: 25px; box-shadow: 0 0 15px cyan; cursor: pointer;">
+            🛒 Trunk: <span id="cart-count">0</span> Items
+        </div>
+    </a>
+
+    <div id="cursor-follower" style="position: fixed; width: 15px; height: 15px; border: 2px solid cyan; border-radius: 50%; pointer-events: none; z-index: 9999; box-shadow: 0 0 15px cyan; transition: transform 0.1s ease-out; background: rgba(0, 255, 255, 0.2);"></div>
+
+    <div class="main">
+        <div class="Header"></div>
+        <br><br><br>
+        <center>
+            <h1>Weasleys' Wizard Wheezes</h1>
+            <br><br>
+            <div class="past">
+                <img src="Weasleys_ Wizard Wheezes.jpg" alt="Weasleys' Wizard Wheezes" width="200" height="200">
+                <h1>Weasleys' Wizard Wheezes past</h1>
+                <h3>The Joke Shop That Revolutionized Wizarding Fun 🧨</h3>
+                <p>
+                "Walk into 93 Diagon Alley and you’ll be greeted by chaos, color, and comedy — that’s Weasleys’ Wizard Wheezes, a shop that turned pranks into profit and laughter into legacy."
+                The Weasley twins’ dream is now a staple of the magical world — both fun and functional.
+                </p><hr>
+
+                <h3>Founded During Dark Times (1996) 🎆</h3>
+                <p>
+                "Launched during the rise of Voldemort, the shop was not only a beacon of joy, but also a supplier of defense tools to the Order and Hogwarts students."
+                Shows how a joke shop became a symbol of resistance and creativity.
+                </p><hr>
+
+                <h3>Skiving Snackboxes, Extendable Ears & More! 🍬👂</h3>
+                <p>
+                "From vomiting candies to fake wands and love potions, their products made mischief magical and homework optional."
+                The variety and uniqueness of the shop's inventory made it legendary.
+                </p><hr>
+
+                <h3>Tragedy and Legacy 🕯️</h3>
+                <p>
+                "After Fred’s tragic death in the Battle of Hogwarts, George kept the store running — a tribute to their bond and brilliance."
+                This adds a layer of emotion and strength to the shop’s history.
+                </p><hr>
+
+                <h3>Still Bursting With Laughter 💥</h3>
+                <p>
+                "Today, the shop is more popular than ever — proving that in the darkest times, humor is magic’s greatest spell."
+                A powerful ending to highlight how joy and resilience define the wizarding world.
+                </p>
+            </div>
+            <br><br><br>
+            <h1 class="wands">Serious Fun for the Seriously Mischievous!</h1>
+            
+            <div class="store container">
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Skiving Snackbox.jpg" alt="Product" width="100%" height="100%"/>
+                        </div>
+                        <div class="card-back">
+                            <h3>Skiving Snackbox</h3>
+                            <h3>Price: g25</h3>
+                            <label>Quantity:</label>
+                            <input type="number" value="1" min="1" style="width: 50px;"/>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Skiving Snackbox', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Peruvian Instant Darkness Powder.jpg" alt="Product" width="100%" height="100%"/>
+                        </div>
+                        <div class="card-back">
+                            <h3>Peruvian Instant Darkness Powder</h3>
+                            <h3>Price: g25</h3>
+                            <label>Quantity:</label>
+                            <input type="number" value="1" min="1" style="width: 50px;"/>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Darkness Powder', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Extendable Ears.jpg" alt="Product" width="100%" height="100%"/>
+                        </div>
+                        <div class="card-back">
+                            <h3>Extendable Ears.jpg</h3>
+                            <h3>Price: g25</h3>
+                            <label>Quantity:</label>
+                            <input type="number" value="1" min="1" style="width: 50px;"/>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Extendable Ears', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="uking Pastilles.jpg" alt="Product" width="100%" height="100%"/>
+                        </div>
+                        <div class="card-back">
+                            <h3>uking Pastilles</h3>
+                            <h3>Price: g25</h3>
+                            <label>Quantity:</label>
+                            <input type="number" value="1" min="1" style="width: 50px;"/>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('uking Pastilles', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Love Potions.jpg" alt="Product" width="100%" height="100%"/>
+                        </div>
+                        <div class="card-back">
+                            <h3>Love Potions</h3>
+                            <h3>Price: g25</h3>
+                            <label>Quantity:</label>
+                            <input type="number" value="1" min="1" style="width: 50px;"/>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Love Potion', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="btn">
+                <a href="grad3.html" class="nav"> <--back--></a>
+                <a href="trunk.html" class="nav">View Trunk 🛒</a>
+            </div>
+        </center>
+    </div>
+
+    <script>
+        // نظام التخزين والمزامنة
+        let cart = JSON.parse(localStorage.getItem('wizardCart')) || [];
+        updateCartCount();
+
+        function addToCart(itemName, price) {
+            cart.push({ name: itemName, price: price });
+            localStorage.setItem('wizardCart', JSON.stringify(cart));
+            updateCartCount();
+            alert("✨ " + itemName + " has been added to your trunk!");
+        }
+
+        function updateCartCount() {
+            if(document.getElementById('cart-count')) {
+                document.getElementById('cart-count').innerText = cart.length;
+            }
+        }
+
+        // تحريك الماوس السيان
+        const cursor = document.getElementById('cursor-follower');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX - 7 + 'px';
+            cursor.style.top = e.clientY - 7 + 'px';
+        });
+    </script>
+</body>
+</html>

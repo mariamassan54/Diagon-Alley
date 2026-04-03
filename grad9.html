@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grad4.css">
+    <title>Quality Quidditch Supplies</title>
+</head>
+<body>
+
+    <a href="trunk.html" style="text-decoration: none;">
+        <div class="cart-status" style="position: fixed; top: 20px; right: 20px; background: rgba(0,0,0,0.8); padding: 10px 20px; border: 2px solid cyan; border-radius: 50px; z-index: 1001; color: cyan; font-family: 'Harry P'; font-size: 25px; box-shadow: 0 0 15px cyan; cursor: pointer;">
+            🛒 Trunk: <span id="cart-count">0</span> Items
+        </div>
+    </a>
+
+    <div id="cursor-follower" style="position: fixed; width: 15px; height: 15px; border: 2px solid cyan; border-radius: 50%; pointer-events: none; z-index: 9999; box-shadow: 0 0 15px cyan; transition: transform 0.1s ease-out; background: rgba(0, 255, 255, 0.2);"></div>
+
+    <div class="main">
+        <div class="Header"></div>
+        <br><br><br>
+        <center>
+            <div class="past">
+                <img src="Quality Quidditch Supplies.jpg" alt="Quality Quidditch Supplies" width="200" height="200">
+                <h1>Quality Quidditch Supplies Past</h1>
+                <h3>The Home of Every Seeker's Dream 🧹</h3>
+                <p>
+                "Located in the heart of Diagon Alley, this shop is the top destination for every aspiring Quidditch player. From sleek brooms to team robes, it’s where legends begin."
+                A must-visit for any wizard or witch passionate about the sport.
+                </p><hr>
+
+                <h3>Founded in the Early 20th Century (c. 1920s) 🏆</h3>
+                <p>
+                "This store opened its doors long before Harry Potter’s time and has served generations of players with premium Quidditch gear."
+                A legacy of excellence in flying equipment and magical sportswear.
+                </p><hr>
+
+                <h3>Brooms, Bludgers & Brand New Firebolts! 🧹🔥</h3>
+                <p>
+                "The famous Firebolt and Nimbus 2000 were proudly sold here — making it the place where champions are outfitted."
+                The shop’s product line evolved with every new generation of the sport.
+                </p><hr>
+
+                <h3>Harry Potter’s Favorite Stop 🌪️</h3>
+                <p>
+                "Harry’s first glimpse of the Nimbus 2000 happened right here — a moment that stirred his Quidditch passion forever."
+                A key memory for fans and a major Harry Potter landmark.
+                </p><hr>
+
+                <h3>Still Soaring Today 💫</h3>
+                <p>
+                "Whether you're a professional Chaser or just starting out, Quality Quidditch Supplies continues to serve the flying community with pride."
+                Proof that good equipment is the first step toward greatness.
+                </p>
+            </div>
+            <br><br><br>
+            <h1 class="wands">Fueling Quidditch Legends Since 1920</h1>
+            
+            <div class="store container">
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Firebolt.jpg" alt="Product" width="100%" height="100%"/>
+                        </div>
+                        <div class="card-back">
+                            <h3>Firebolt</h3>
+                            <h3>Price: g25</h3>
+                            <label>Quantity:</label>
+                            <input type="number" value="1" min="1" style="width: 50px;"/>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Firebolt Broom', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Bludger Bats.jpg" alt="Product" width="100%" height="100%"/>
+                        </div>
+                        <div class="card-back">
+                            <h3>Bludger Bats</h3>
+                            <h3>Price: g25</h3>
+                            <label>Quantity:</label>
+                            <input type="number" value="1" min="1" style="width: 50px;"/>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Bludger Bats', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Quaffle.jpg" alt="Product" width="100%" height="100%"/>
+                        </div>
+                        <div class="card-back">
+                            <h3>Quaffle</h3>
+                            <h3>Price: g25</h3>
+                            <label>Quantity:</label>
+                            <input type="number" value="1" min="1" style="width: 50px;"/>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Quaffle Ball', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Golden.jpg" alt="Product" width="100%" height="100%"/>
+                        </div>
+                        <div class="card-back">
+                            <h3>Golden Snitch</h3>
+                            <h3>Price: g25</h3>
+                            <label>Quantity:</label>
+                            <input type="number" value="1" min="1" style="width: 50px;"/>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Golden Snitch', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Protective Gear.jpg" alt="Product" width="100%" height="100%"/>
+                        </div>
+                        <div class="card-back">
+                            <h3>Protective Gear</h3>
+                            <h3>Price: g25</h3>
+                            <label>Quantity:</label>
+                            <input type="number" value="1" min="1" style="width: 50px;"/>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Protective Gear', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="btn">
+                <a href="grad3.html" class="nav"> <--back--></a>
+                <a href="trunk.html" class="nav">View Trunk 🛒</a>
+            </div>
+        </center>
+    </div>
+
+    <script>
+        // نظام التخزين
+        let cart = JSON.parse(localStorage.getItem('wizardCart')) || [];
+        updateCartCount();
+
+        function addToCart(itemName, price) {
+            cart.push({ name: itemName, price: price });
+            localStorage.setItem('wizardCart', JSON.stringify(cart));
+            updateCartCount();
+            alert("✨ " + itemName + " has been added to your trunk!");
+        }
+
+        function updateCartCount() {
+            if(document.getElementById('cart-count')) {
+                document.getElementById('cart-count').innerText = cart.length;
+            }
+        }
+
+        // تأثير الماوس
+        const cursor = document.getElementById('cursor-follower');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX - 7 + 'px';
+            cursor.style.top = e.clientY - 7 + 'px';
+        });
+    </script>
+</body>
+</html>

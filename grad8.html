@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grad4.css">
+    <title>Magical Menagerie</title>
+</head>
+<body>
+
+    <a href="trunk.html" style="text-decoration: none;">
+        <div class="cart-status" style="position: fixed; top: 20px; right: 20px; background: rgba(0,0,0,0.8); padding: 10px 20px; border: 2px solid cyan; border-radius: 50px; z-index: 1001; color: cyan; font-family: 'Harry P'; font-size: 25px; box-shadow: 0 0 15px cyan; cursor: pointer;">
+            🛒 Trunk: <span id="cart-count">0</span> Items
+        </div>
+    </a>
+
+    <div id="cursor-follower" style="position: fixed; width: 15px; height: 15px; border: 2px solid cyan; border-radius: 50%; pointer-events: none; z-index: 9999; box-shadow: 0 0 15px cyan; transition: transform 0.1s ease-out; background: rgba(0, 255, 255, 0.2);"></div>
+
+    <div class="main">
+        <div class="Header"></div>
+        <br><br><br>
+        <center>
+            <div class="past">
+                <img src="Magical Menagerie.jpg" alt="Magical Menagerie" width="200" height="200">
+                <h1>Magical Menagerie</h1>
+                <h3>Your Magical Companion Awaits 🐍🦉</h3>
+                <p>
+                    Tucked in the heart of Diagon Alley, Magical Menagerie is more than just a pet store — it’s a sanctuary for magical creatures and the witches and wizards who love them.
+                </p><hr>
+
+                <h3>A Trusted Name Since 1442 🕰️</h3>
+                <p>
+                    Founded in 1442, Magical Menagerie has been the go-to shop for witches and wizards seeking loyal familiars, rare creatures, and enchanted critters of all kinds.
+                </p><hr>
+
+                <h3>Home to Owls, Kneazles, and the Unusual 🐾</h3>
+                <p>
+                    Whether you're after a whispering snake, a color-shifting chameleon, or a playful Puffskein — this shop offers more than just cuddly companions.
+                </p><hr>
+
+                <h3>More Than Pets — A Magical Bond ✨</h3>
+                <p>
+                    Each creature here is handpicked and cared for by experts who understand the powerful bond between witch and familiar.
+                </p><hr>
+
+                <h3>The Wild Heart of Diagon Alley 💚</h3>
+                <p>
+                    Magical Menagerie brings life, sound, and wonder to Diagon Alley — one purr, hiss, and hoot at a time.
+                </p>
+            </div>
+            <br><br><br>
+            <h1 class="wands">Creatures with Character, Magic with Heart</h1>
+            
+            <div class="store container">
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src=" Snowy Owl.jpg" alt="Product" width="100%" height="100%"/>
+                        </div>
+                        <div class="card-back">
+                            <h3> Snowy Owl</h3>
+                            <h3>Price: g25</h3>
+                            <label>Quantity:</label>
+                            <input type="number" value="1" min="1" style="width: 50px;"/>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Snowy Owl', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Talking Snake.jpg" alt="Product" width="100%" height="100%"/>
+                        </div>
+                        <div class="card-back">
+                            <h3>Talking Snake</h3>
+                            <h3>Price: g25</h3>
+                            <label>Quantity:</label>
+                            <input type="number" value="1" min="1" style="width: 50px;"/>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Talking Snake', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Toads (Regular & Singing).jpg" alt="Product" width="100%" height="100%"/>
+                        </div>
+                        <div class="card-back">
+                            <h3>Toads (Regular & Singing)</h3>
+                            <h3>Price: g25</h3>
+                            <label>Quantity:</label>
+                            <input type="number" value="1" min="1" style="width: 50px;"/>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Singing Toad', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src=" Pygmy Puff .jpg" alt="Product" width="100%" height="100%"/>
+                        </div>
+                        <div class="card-back">
+                            <h3> Pygmy Puff </h3>
+                            <h3>Price: g25</h3>
+                            <label>Quantity:</label>
+                            <input type="number" value="1" min="1" style="width: 50px;"/>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Pygmy Puff', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src=" Miniature Spiders (Trained)  .jpg" alt="Product" width="100%" height="100%"/>
+                        </div>
+                        <div class="card-back">
+                            <h3> Miniature Spiders (Trained)  </h3>
+                            <h3>Price: g25</h3>
+                            <label>Quantity:</label>
+                            <input type="number" value="1" min="1" style="width: 50px;"/>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Trained Spiders', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="btn">
+                <a href="grad3.html" class="nav"> <--back--></a>
+                <a href="trunk.html" class="nav">View Trunk 🛒</a>
+            </div>
+        </center>
+    </div>
+
+    <script>
+        // نظام التخزين
+        let cart = JSON.parse(localStorage.getItem('wizardCart')) || [];
+        updateCartCount();
+
+        function addToCart(itemName, price) {
+            cart.push({ name: itemName, price: price });
+            localStorage.setItem('wizardCart', JSON.stringify(cart));
+            updateCartCount();
+            alert("✨ " + itemName + " has been added to your trunk!");
+        }
+
+        function updateCartCount() {
+            if(document.getElementById('cart-count')) {
+                document.getElementById('cart-count').innerText = cart.length;
+            }
+        }
+
+        // تأثير الماوس السيان
+        const cursor = document.getElementById('cursor-follower');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX - 7 + 'px';
+            cursor.style.top = e.clientY - 7 + 'px';
+        });
+    </script>
+</body>
+</html>

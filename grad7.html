@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grad4.css">
+    <title>Madam Malkin's Robes</title>
+</head>
+<body>
+
+    <a href="trunk.html" style="text-decoration: none;">
+        <div class="cart-status" style="position: fixed; top: 20px; right: 20px; background: rgba(0,0,0,0.8); padding: 10px 20px; border: 2px solid cyan; border-radius: 50px; z-index: 1001; color: cyan; font-family: 'Harry P'; font-size: 25px; box-shadow: 0 0 15px cyan; cursor: pointer;">
+            🛒 Trunk: <span id="cart-count">0</span> Items
+        </div>
+    </a>
+
+    <div id="cursor-follower" style="position: fixed; width: 15px; height: 15px; border: 2px solid cyan; border-radius: 50%; pointer-events: none; z-index: 9999; box-shadow: 0 0 15px cyan; transition: transform 0.1s ease-out; background: rgba(0, 255, 255, 0.2);"></div>
+
+    <div class="main">
+        <div class="Header"></div>
+        <br><br><br>
+        <center>
+            <h1>Madam Malkin's Robes</h1>
+            <br><br>
+            <div class="past">
+                <img src="Madam Malkin_s Robes.jpg" alt="Madam Malkin's Robes" width="200" height="200">
+                <h1>Madam Malkin's Robes for All Occasions 👗</h1>
+                <h3>The Wizarding World's Fashion Hub ✨</h3>
+                <p>
+                    "Need school robes for Hogwarts or elegant dress robes for the Yule Ball? Madam Malkin’s Robes has it all — stitched with spellwork and style!"
+                    This introduces the shop as the ultimate place for magical fashion in Diagon Alley.
+                </p><hr>
+
+                <h3>Elegance Since 1946 🧵</h3>
+                <p>
+                    "Established in 1946, Madam Malkin’s has robed witches and wizards from first-years to Ministry officials — with magical fittings that perfect the fit."
+                    Highlights the long-standing trust and quality of the store’s robes.
+                </p><hr>
+
+                <h3>Magically Tailored for Every Body Type 🪡</h3>
+                <p>
+                    "Whether you’re a half-giant or a house-elf, enchanted threads adjust to your exact size, ensuring comfort and charm."
+                    Focuses on inclusivity and magical customization.
+                </p><hr>
+
+                <h3>Celebrity Clients & Hogwarts Uniforms 🌟</h3>
+                <p>
+                    "From famous Quidditch players to every Hogwarts student — this is where magical wardrobes begin."
+                    Shows the store’s importance in everyday and high-profile magical life.
+                </p><hr>
+
+                <h3>Style Meets Spellcraft 🪄</h3>
+                <p>
+                    "Each robe isn’t just sewn, it’s enchanted — anti-wrinkle, anti-fire, even mood-changing colors for the bold!"
+                    Ends on a magical, stylish note that reflects the brand’s charm.
+                </p>
+            </div>
+            <br><br><br>
+            <h1 class="wands">From First Year to Fame — Robes for All Occasions.</h1>
+
+            <div class="container">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://i.pinimg.com/1200x/8c/aa/4e/8caa4ea7f9a06663d7c76875b5d9f899.jpg" alt="Product" width="200px" height="200px"/>
+                            <h2>School Uniform - Gryffindor</h2>
+                        </div>
+                        <div class="card-back">
+                            <h3>Price: $25</h3>
+                            <label>Quantity: <input type="number" value="1" min="1" style="width: 50px;"/></label>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Gryffindor Uniform', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://i.pinimg.com/1200x/72/51/29/725129ad9f4c5cd13316168287dfd8a7.jpg" alt="Product" width="200px" height="200px"/>
+                            <h2>School Uniform - Hufflepuff</h2>
+                        </div>
+                        <div class="card-back">
+                            <h3>Price: $25</h3>
+                            <label>Quantity: <input type="number" value="1" min="1" style="width: 50px;"/></label>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Hufflepuff Uniform', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://i.pinimg.com/736x/de/f2/9b/def29b4292d92fab7221aa1d6b193296.jpg" alt="Product" height="200px" width="200px"/>
+                            <h2>School Uniform - Ravenclaw</h2>
+                        </div>
+                        <div class="card-back">
+                            <h3>Price: $25</h3>
+                            <label>Quantity: <input type="number" value="1" min="1" style="width: 50px;"/></label>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Ravenclaw Uniform', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://i.pinimg.com/736x/ff/a1/34/ffa1340779c75708e269067c52989f09.jpg" alt="Product" height="200px" width="200px" />
+                            <h2>School Uniform - Slytherin</h2>
+                        </div>
+                        <div class="card-back">
+                            <h3>Price: $25</h3>
+                            <label>Quantity: <input type="number" value="1" min="1" style="width: 50px;"/></label>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Slytherin Uniform', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://i.pinimg.com/1200x/43/fb/ab/43fbab21e4e4e84861d54cd66df938cb.jpg" alt="Product" width="200px" height="200px"/>
+                            <h2>School Uniform - Quidditch</h2>
+                        </div>
+                        <div class="card-back">
+                            <h3>Price: $25</h3>
+                            <label>Quantity: <input type="number" value="1" min="1" style="width: 40px;"/></label>
+                            <details>
+                                <summary>ur house</summary>
+                                <div class="houses">
+                                    <label>Gryffindor <input type="checkbox"></label><br>
+                                    <label>Hufflepuff <input type="checkbox"></label><br>
+                                    <label>Ravenclaw <input type="checkbox"></label><br>
+                                    <label>Slytherin <input type="checkbox"></label>
+                                </div>
+                            </details>
+                            <button class="buy-btn" onclick="addToCart('Quidditch Uniform', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="btn">
+                <a href="grad3.html" class="nav"> <--back--></a>
+                <a href="trunk.html" class="nav">View Trunk 🛒</a>
+            </div>
+        </center>
+    </div>
+
+    <script>
+        // نظام التخزين
+        let cart = JSON.parse(localStorage.getItem('wizardCart')) || [];
+        updateCartCount();
+
+        function addToCart(itemName, price) {
+            cart.push({ name: itemName, price: price });
+            localStorage.setItem('wizardCart', JSON.stringify(cart));
+            updateCartCount();
+            alert("✨ " + itemName + " has been added to your trunk!");
+        }
+
+        function updateCartCount() {
+            if(document.getElementById('cart-count')) {
+                document.getElementById('cart-count').innerText = cart.length;
+            }
+        }
+
+        // تحريك الماوس
+        const cursor = document.getElementById('cursor-follower');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX - 7 + 'px';
+            cursor.style.top = e.clientY - 7 + 'px';
+        });
+    </script>
+</body>
+</html>

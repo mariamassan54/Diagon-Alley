@@ -1,0 +1,266 @@
+body {
+    background-color: black;
+    color: antiquewhite;
+    background-attachment: scroll;
+}
+
+.Header {
+    background-image: url("logo1.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 90%;
+    margin: 30px auto;
+    color: wheat;
+    border-radius: 27px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.Header:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 3px 8px 4px cyan;
+}
+
+h1 {
+    font-family: 'Harry P', serif;
+    font-size: 50px;
+    color: aqua;
+}
+
+.past {
+    text-align: center;
+    padding: 25px;
+    border-radius: 150px;
+    width: 900px;
+    margin: auto;
+    border: 2px solid cyan;
+}
+
+.past:hover {
+    box-shadow: 2px 3px 8px 4px cyan;
+    transition: box-shadow 0.5s ease;
+}
+
+.wands {
+    color: black;
+    font-family: 'Harry P';
+    display: inline;
+    font-size: 50px;
+    padding: 25px;
+}
+
+.wands:hover {
+    background-color: darkseagreen;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 3px 8px 4px darkolivegreen;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* زيادة المسافة عشان الدوران */
+    padding: 40px;
+    perspective: 1000px; /* إضافة منظور للحاوية الكبيرة */
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    margin: 40px auto;
+    /* التعديل هنا: شلنا overflow: hidden عشان الجناب ما تتقصش */
+    background-color: transparent; 
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3); /* توحيد الظل مع لون الموقع */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-front {
+    background-color: #fff;
+    color: black;
+}
+
+.card-back {
+    background-color: #222;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 15px;
+    gap: 10px;
+    /* التعديلات الجديدة هنا 👇 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* عشان الكلام والـ PDF يترصوا من فوق لتحت */
+    overflow: hidden; /* أي زيادة في الـ PDF هتتقص بدل ما تخرج بره الكارت */
+}
+
+.card-back embed {
+    border: 1px solid cyan;
+    max-width: 100%; /* ضمان عدم الخروج عن الكارت */
+}
+
+/* باقي الكود كما هو من غير تغيير */
+
+.card-back button {
+    background-color: gold;
+    border: none;
+    padding: 10px 20px;
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card-back input {
+    width: 60px;
+    padding: 5px;
+}
+
+.nav {
+    background-color: #2e1a47;
+    color: ivory;
+    font-size: 18px;
+    padding: 15px 40px;
+    margin: 10px auto;
+    border: 2px solid #bb86fc;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(187, 134, 252, 0.5);
+    display: block;
+    width: fit-content;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav:hover {
+    background-color: blueviolet;
+}
+
+.pdf-link {
+    background-color: black;
+    color: ivory;
+    font-size: 18px;
+    padding: 15px 40px;
+    margin: 10px auto;
+    border: 2px solid pink;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px cyan;
+    display: block;
+    width: fit-content;
+    text-align: center;
+    text-decoration: none;
+}
+
+.pdf-link:hover {
+    background-color: gray;
+    transition: background-color 0.3s ease;
+}
+
+.is {
+    box-shadow: 2px 2px 7px 9px cyan;
+}
+
+.delivery-table {
+    border: 2px solid aqua;
+    box-shadow: 2px 2px 7px 9px cyan;
+    border-radius: 25px;
+    transition: 0.4s ease-in-out;
+}
+
+.delivery-table:hover {
+    transform: scale(1.2);
+}
+
+.hogwarts:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(5px 5px 10px darkseagreen);
+    transition: all 0.6s ease;
+}
+
+button.spell-button {
+    background-color: #2e1a47;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Harry P', serif;
+    padding: 12px 24px;
+    margin: 10px;
+    border: 2px solid #bb86fc;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(187, 134, 252, 0.5);
+}
+
+button.spell-button:hover {
+    background-color: #bb86fc;
+    color: #2e1a47;
+    box-shadow: 0 6px 18px rgba(255, 255, 255, 0.6);
+    transition: all 0.3s ease;
+}
+/* تغيير شكل الماوس الأساسي (اختياري لو عايزة سهم سحري) */
+body {
+    cursor: url('https://cur.cursors-4u.net/games/gam-13/gam1211.cur'), auto;
+}
+
+/* الدائرة اللي بتلحق الماوس */
+.cursor-follower {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: rgba(0, 255, 255, 0.3);
+    border: 1px solid cyan;
+    border-radius: 50%;
+    pointer-events: none; /* عشان ميعطلش الكليكات */
+    z-index: 9999;
+    transition: transform 0.1s ease-out;
+    box-shadow: 0 0 15px cyan;
+}
+        .trunk-table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: rgba(0, 0, 0, 0.8);
+            color: cyan;
+            font-family: 'Harry P', sans-serif;
+            font-size: 25px;
+            border: 2px solid cyan;
+        }
+        .trunk-table th, .trunk-table td {
+            padding: 15px;
+            border: 1px solid cyan;
+            text-align: center;
+        }
+        .total-section {
+            font-size: 30px;
+            color: yellow;
+            margin-top: 20px;
+        }
+        .clear-btn {
+            background: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+        }

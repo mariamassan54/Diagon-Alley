@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grad4.css">
+    <title>Eeylops Owl Emporium</title>
+</head>
+<body>
+
+    <a href="trunk.html" style="text-decoration: none;">
+        <div class="cart-status" style="position: fixed; top: 20px; right: 20px; background: rgba(0,0,0,0.8); padding: 10px 20px; border: 2px solid cyan; border-radius: 50px; z-index: 1001; color: cyan; font-family: 'Harry P'; font-size: 25px; box-shadow: 0 0 15px cyan; cursor: pointer;">
+            🛒 Trunk: <span id="cart-count">0</span> Items
+        </div>
+    </a>
+
+    <div id="cursor-follower" style="position: fixed; width: 15px; height: 15px; border: 2px solid cyan; border-radius: 50%; pointer-events: none; z-index: 9999; box-shadow: 0 0 15px cyan; transition: transform 0.1s ease-out; background: rgba(0, 255, 255, 0.2);"></div>
+
+    <div class="main">
+        <div class="Header"></div>
+        <br><br><br>
+        <center>
+            <div class="past">
+                <img src="Eeylops Owl Emporium.jpg" alt="Eeylops Owl Emporium" width="200" height="200">
+                <h1>Eeylops Owl Emporium - Past</h1>
+                <h3>Delivering Magic, One Owl at a Time 🦉</h3>
+                <p>
+                    "Nestled in the shadows of Diagon Alley, Eeylops Owl Emporium has long been the go-to destination for magical messengers with feathers and wisdom."
+                    Known for its wide range of owls and care products since the 1400s.
+                </p><hr>
+
+                <h3>Established in 1473 - Wisdom Takes Flight 🪶</h3>
+                <p>
+                    "Eeylops began as a humble bird shop, quickly gaining popularity for breeding rare magical owls that bonded with witches and wizards alike."
+                    A trusted name in magical communication.
+                </p><hr>
+
+                <h3>Owls for Every Witch and Wizard 💌</h3>
+                <p>
+                    "From snowy owls to barn owls, Eeylops offers the perfect companion for sending letters, carrying parcels, or simply offering silent loyalty."
+                    A Hogwarts student favorite.
+                </p><hr>
+
+                <h3>Guided by Care and Knowledge 🧙‍♀️</h3>
+                <p>
+                    "Staffed by experts in owl behavior and magical creature care, Eeylops ensures every owl receives the best treatment and training."
+                    It’s more than a shop — it’s a sanctuary.
+                </p><hr>
+
+                <h3>Still Soaring in Wizarding History ✉️</h3>
+                <p>
+                    "Centuries later, Eeylops remains a staple in Diagon Alley — a place where young witches and wizards meet their first magical companions."
+                    A tradition that continues to fly high.
+                </p>
+            </div>
+            <br><br><br>
+            <h1 class="wands">Delivering Magic, One Owl at a Time</h1>
+            
+            <div class="store container">
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Snowy Owl.jpg" alt="Product" width="100%" height="100%"/>
+                        </div>
+                        <div class="card-back">
+                            <h3>Snow Owl</h3>
+                            <h3>Price: g25</h3>
+                            <label>Quantity:</label>
+                            <input type="number" value="1" min="1" style="width: 50px;"/>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Snowy Owl', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Barn Owls.jpg" alt="Product" width="100%" height="100%"/>
+                        </div>
+                        <div class="card-back">
+                            <h3>Barn Owls</h3>
+                            <h3>Price: g25</h3>
+                            <label>Quantity:</label>
+                            <input type="number" value="1" min="1" style="width: 50px;"/>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Barn Owl', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Tawny Owls.jpg" alt="Product" width="100%" height="100%"/>
+                        </div>
+                        <div class="card-back">
+                            <h3>Tawny Owls</h3>
+                            <h3>Price: g25</h3>
+                            <label>Quantity:</label>
+                            <input type="number" value="1" min="1" style="width: 50px;"/>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Tawny Owl', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src=" Screech Owls.jpg" alt="Product" width="100%" height="100%"/>
+                        </div>
+                        <div class="card-back">
+                            <h3>Screech Owls</h3>
+                            <h3>Price: g25</h3>
+                            <label>Quantity:</label>
+                            <input type="number" value="1" min="1" style="width: 50px;"/>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Screech Owl', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Magical Owl Cages.jpg" alt="Product" width="100%" height="100%"/>
+                        </div>
+                        <div class="card-back">
+                            <h3>Magical Owl Cages</h3>
+                            <h3>Price: g25</h3>
+                            <label>Quantity:</label>
+                            <input type="number" value="1" min="1" style="width: 50px;"/>
+                            <br><br>
+                            <button class="buy-btn" onclick="addToCart('Owl Cage', 25)">Add to Trunk</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="btn">
+                <a href="grad3.html" class="nav"> <--back--></a>
+                <a href="trunk.html" class="nav">View Trunk 🛒</a>
+            </div>
+        </center>
+    </div>
+
+    <script>
+        // نظام التخزين والمزامنة
+        let cart = JSON.parse(localStorage.getItem('wizardCart')) || [];
+        updateCartCount();
+
+        function addToCart(itemName, price) {
+            cart.push({ name: itemName, price: price });
+            localStorage.setItem('wizardCart', JSON.stringify(cart));
+            updateCartCount();
+            alert("✨ " + itemName + " has been added to your trunk!");
+        }
+
+        function updateCartCount() {
+            if(document.getElementById('cart-count')) {
+                document.getElementById('cart-count').innerText = cart.length;
+            }
+        }
+
+        // تحريك الماوس السيان
+        const cursor = document.getElementById('cursor-follower');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX - 7 + 'px';
+            cursor.style.top = e.clientY - 7 + 'px';
+        });
+    </script>
+</body>
+</html>
